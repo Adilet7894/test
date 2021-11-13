@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form action="">
+            <h1>Application form</h1>
+            <br>
+            <p class="note">Note: This form is to be submitted 30 days before the starting date</p>
+            <h2>Personal Information</h2>
+            <!-- Personal information section -->
+            <table class="personal-info">
+                <tr>
+                    <td><label for="name">Name</label></td>
+                    <td><input type="text" id="name" value="Enter your name..."></td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address</label></td>
+                    <td><input type="text" id="address" value="Enter your address..."></td>
+                </tr>
+                <tr>
+                    <td><label for="E-mail">E-mail</label></td>
+                    <td><input type="email" id="E-mail" multiple value="Enter your email"></td>
+                </tr>
+                <tr>
+                    <td><label for="grade">Grade</label></td>
+                    <td><input type="number" id="grade" min="1" max="12" value="Enter your grade..."></td>
+                </tr>
+            
+                <tr>
+                    <td><label for="phone">Phone</label></td>
+                    <td><input type="text" name="phone" id="phone" value="+1"></td>
+                </tr>
+            </table>
+            <!-- gender section -->
+            <section class="gender">
+                <div class="pol">
+                    <label for="male">Male</label><input type="radio" id="male" name="sex">
+                    <label for="female">Female</label><input type="radio" name="sex" id="Female">
+                    <label for="other">Other</label><input type="radio" name="sex" id="other">
+                </div>
+                <div class="birthdate">
+                    <label for="date">Birth Date</label>
+                    <input type="date" value="" id="date">
+                </div>
+            </section>
+            <!-- Some fields to check in checkbox -->
+            <section class="check">
+                <ul class="platform">
+                    <li>
+                        <input type="checkbox" id="js"><label for="js">I want to learn JavaScript</label>
+        
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="react"><label for="react">I want to learn React</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="html"><label for="html">I want to learn HTML</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="css"><label for="css">I want to learn CSS</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="py"><label for="py">I want to learn Python</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="" id="c#"><label for="c#">I want to learn C#</label>
+                    </li>
+                </ul>
+                <table class="education">
+                    <tr>
+                        <td><label for="level">Education Level:</label></td>
+                        <td><select name="education" id="level">
+                            <option value="Elementary">Elementary school</option>
+                            <option value="high">High school</option>
+                            <option value="bachelor">Bachelor's</option>
+                            <option value="master">Master's</option>
+                            <option value="phd">Phd</option>
+                        </select></td>
+                    </tr>
+                </table>
+            </section>
+            <!-- Essay section -->
+            <section class="essay">
+                <textarea name="essay" id="txt-area" cols="30" rows="10">Your essay here...</textarea>
+                <br>
+                <input type="submit" name="sub" id="submit" value="Submit">
+                <a id="cancel" href="">Cancel</a>
+            </section>
+        </form>
+    </body>
+</html>
