@@ -1,0 +1,60 @@
+background-img{
+   
+    position: relative;
+}
+body{
+    margin: 0;
+
+}
+
+img{
+    height: 1200px;
+    width: 100%;
+    position: relative;
+    
+}
+
+.texts{
+    font-size: 32px;
+    font-weight: bolder;
+    color: white;
+}
+
+#first{
+    position: absolute;
+    top: -10px;
+    left: 15px;
+    
+}
+#second{
+    position: absolute;
+    top: -10px;
+    right: 15px;
+}
+#center{
+    position: absolute;
+    top: 500px;
+    left: 400px;  
+    font-size: 50px; 
+}
+#mini{
+    position: absolute;
+    top: 620px;
+    left: 530px;
+    font-size: 20px;}
+#bottom-right{
+    position: absolute;
+    bottom: -550px;
+    right: 20px;
+}
+#bottom-left{
+    position: absolute;
+    bottom: -550px;
+    left: 20px;
+}
+hr{
+    position: absolute;
+    top: 600px;
+    left: 500px;
+    margin-top: 30px;
+}
