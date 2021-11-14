@@ -2,40 +2,45 @@
 <html>
     <head>
         <title>Form</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Sacramento&display=swap" rel="stylesheet">
+        
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <form action="">
+        <form class="container" action="">
             <h1>Application form</h1>
             <br>
             <p class="note">Note: This form is to be submitted 30 days before the starting date</p>
             <h2>Personal Information</h2>
             <!-- Personal information section -->
             <table class="personal-info">
-                <tr>
+                <tr class="row">
                     <td><label for="name">Name</label></td>
-                    <td><input type="text" id="name" value="Enter your name..."></td>
+                    <td><input type="text" id="name" style="color: #7c4300;" value="Enter your name..."></td>
                 </tr>
-                <tr>
+                <tr class="row">
                     <td><label for="address">Address</label></td>
-                    <td><input type="text" id="address" value="Enter your address..."></td>
+                    <td><input type="text" id="address" style="color: #7c4300;" value="Enter your address..."></td>
                 </tr>
-                <tr>
+                <tr class="row">
                     <td><label for="E-mail">E-mail</label></td>
-                    <td><input type="email" id="E-mail" multiple value="Enter your email"></td>
+                    <td><input type="email" id="E-mail" multiple value="Enter your email" style="color: #7c4300;"></td>
                 </tr>
-                <tr>
+                <tr class="row">
                     <td><label for="grade">Grade</label></td>
-                    <td><input type="number" id="grade" min="1" max="12" value="Enter your grade..."></td>
+                    <td><input type="number" id="grade" min="1" max="12" style="color: #7c4300;" value="Enter your grade..."></td>
                 </tr>
             
-                <tr>
+                <tr class="row">
                     <td><label for="phone">Phone</label></td>
-                    <td><input type="text" name="phone" id="phone" value="+1"></td>
+                    <td><input type="text" name="phone" id="phone" style="color: #7c4300;" value="+1"></td>
                 </tr>
             </table>
             <!-- gender section -->
-            <section class="gender">
+            <h2>Gender</h2>
+            <section class="gender">   
                 <div class="pol">
                     <label for="male">Male</label><input type="radio" id="male" name="sex">
                     <label for="female">Female</label><input type="radio" name="sex" id="Female">
@@ -43,10 +48,11 @@
                 </div>
                 <div class="birthdate">
                     <label for="date">Birth Date</label>
-                    <input type="date" value="" id="date">
+                    <input type="date" style="color: #7c4300;" value="" id="date">
                 </div>
             </section>
             <!-- Some fields to check in checkbox -->
+            <h2>Check all that apply</h2>
             <section class="check">
                 <ul class="platform">
                     <li>
@@ -83,11 +89,12 @@
                 </table>
             </section>
             <!-- Essay section -->
+            <h2>Essay Section</h2>
             <section class="essay">
-                <textarea name="essay" id="txt-area" cols="30" rows="10">Your essay here...</textarea>
+                <textarea name="essay" id="txt-area" cols="30" style="color: #7c4300;" rows="7">Your essay here...</textarea>
                 <br>
-                <input type="submit" name="sub" id="submit" value="Submit">
-                <a id="cancel" href="">Cancel</a>
+                <input type="submit" name="sub" style="color: #7c4300;" id="submit" value="Submit">
+                <a id="cancel" style="color: #7c4300;" href="index.html">Cancel</a>
             </section>
         </form>
     </body>

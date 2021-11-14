@@ -1,0 +1,73 @@
+body{
+    background-color: #3c352a;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Sacramento', cursive; */
+}
+.container{
+    color: white;
+    margin-top: 80px;
+    margin-left: 65px;
+
+}
+table{
+    border-collapse: separate;
+    border-spacing: 55px 10px;  
+}
+
+label{
+    font-size: 20px;
+    margin: 5px;
+}
+ /* ----------------------------- gender section ----------------------------- */
+.gender{
+    margin-left: 55px;
+}
+.birthdate{
+    margin-top: 20px;
+}
+#date{
+    margin-left: 70px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                              checkbox section                              */
+/* -------------------------------------------------------------------------- */
+
+ul{
+    list-style-type: none;
+    margin-left: 15px;
+}
+li{
+    padding: 5px;
+}
+/* ------------------------------ essay section ----------------------------- */
+
+.essay{
+    margin-left: 50px;
+}
+#txt-area{
+    margin: 10px;
+}
+#submit, #cancel{
+    margin: 10px;
+    padding: 4px;
+}
+#submit{
+    font-size: 16px;
+    border-radius: initial;
+    border-color: grey;
+    padding: 4.5px;
+}
+#cancel{
+    border: 2px solid grey;
+    background-color: white;
+    text-decoration: none;
+}
+#cancel:hover{
+    background-color: rgb(155, 148, 148);
+}
+#submit :hover{
+    background-color: rgb(155, 148, 148);
+}
