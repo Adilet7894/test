@@ -85,4 +85,34 @@ p{
 /* -------------------------------------------------------------------------- */
 /*                               media querries                               */
 /* -------------------------------------------------------------------------- */
-
+@media screen and (max-width: 600px) {
+    body{
+        background-color: #a17ce3;
+    }
+    li{
+        border: 1px solid #a17ce3;
+        background-color: #a17ce3;
+    }
+    footer{
+        color: #5408e2;
+        background-color: lightgreen;
+    }
+    #p-lang{
+        color:#815bc4;
+    }
+    #large{
+        color: #815bc4;
+    }
+    .menu, .center, .side-bar{
+        display: block;
+        width: 90%;
+        margin: auto;
+    }
+    .container{
+        width: 95%;
+        margin: auto;
+    }
+    .side-bar{
+        background-color: lightsalmon;
+    }
+}
