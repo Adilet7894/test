@@ -11,7 +11,7 @@ body{
 .bg-image{
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url(https://static.pexels.com/photos/248515/pexels-photo-248515.png);
     width: 100%;
-    height: 450px;
+    height: 100vh;
     background-color: #333;
     background-position: center;
     background-repeat: no-repeat;
@@ -45,30 +45,35 @@ body{
     background-color: white;
     color: black;
 }
-
+/* -------------------------------- main area ------------------------------- */
+.main-container{
+    background-color: #eaeaea;
+    margin-top: 0;
+    padding: 20px;
+}
 #section-a{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-around;
     background-color: #eaeaea;
   
 }
 .left, .right{
-    width: 35%;
+    width: 45%;
     margin: 15px;
   
     text-align: center;
 }
 
-#web-a{
+/* #web-a{
     text-align: center;
     margin-top: 30px;
-}
-.contain{
+} */
+/* .contain{
     display: flex;
     flex-direction: row;
-    justify-content: center;    
-}
+    justify-content: space-around;    
+} */
 /* -------------------------------- section b ------------------------------- */
 
 #section-b{
@@ -152,4 +157,52 @@ h4{
 }
 #github:hover{
     color: #f135e8;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                               media querries                               */
+/* -------------------------------------------------------------------------- */
+
+@media screen and (max-width: 800px){
+    #section-a, #section-b, #section-c, footer{
+        flex-direction: column;
+    }
+    .left, .right{
+        width: 75%;
+        margin: auto;
+    }
+    #section-b{
+        margin: 0;
+    }
+    .card{
+        width: 90%;
+        margin: auto;
+    }
+    .main-container{
+        background-color: #eaeaea;
+        margin-top: 0;
+        padding: 0px;
+        padding-top: 20px;
+    }
+    .contacts{
+        flex-direction: column;
+        margin-top: 90px;
+        width: 91.58%;
+    } 
+    .contact-us{
+        width: 100%;
+    }
+    .about-us{
+        width: 100%; 
+    }
+
+    footer{
+        margin-top: 110px;
+        justify-content: flex-end;
+    }
+    #footer-left, #footer-right{
+        margin: 3px;
+        margin-top: 10px;
+    }
+   
 }
